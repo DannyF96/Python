@@ -1,0 +1,47 @@
+# Quiz Game by Danny Forester
+
+print("Welcome to my computer quiz!")
+
+playing = input("Do you want to play? ").lower()
+
+if playing != "yes":
+    quit()
+
+print("Okay! Let's play!")
+score = 0
+
+
+# Question 1
+answer = input("What does CPU stand for? ").lower()
+if answer == "central processing unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong!")
+
+# Question 2
+answer = input("What does GPU stand for? ").lower()
+if answer == "graphics processing unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong!")
+
+# Question 3
+answer = input("What does RAM stand for? ").lower()
+if answer == "random access memory":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong!")
+
+# Question 4
+answer = input("What does PSU stand for? ").lower
+if answer == "power supply unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong!")
+
+print("Your final score: " + str(score) + "!")
+print("Your final score: " + str((score/4) * 100) + "%!")
